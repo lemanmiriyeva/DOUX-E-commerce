@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #181818;
+}
+a {
+  font-family: "Felix Titling", sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+.container {
+  width: 90% !important;
+  margin: auto;
+  position: relative;
+  height: 1000px;
+}
+@media (min-width: 767px) {
+  .Slider-featuredImage {
+    width: 600px;
+    height: 500px;
+  }
+  .email {
+    width: 349px;
+  }
+
+  .footer {
+    height: 300px;
+  }
+  .input-div {
+    width: 620px;
+
+    flex-direction: row;
+  }
+
+  .subscribe {
+    height: 300px;
+  }
+
+  .footer {
+    height: 300px;
+
+    align-items: center;
+  }
+  .subscribe {
+    height: 300px;
+  }
+  .modal {
+    width: 50%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .colors,
+  .sizes {
+    width: 60% !important;
+  }
+  .excepts {
+    display: none !important;
+  }
+  .quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+  }
+  .product-information {
+    width: 100% !important;
+  }
+  .Slider-thumbnails {
+    display: none !important;
+  }
+  .product-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .Slider-featuredImage {
+    width: 100%;
+  }
+  .colors-div,
+  .size-div,
+  .quantity {
+    margin-top: 2%;
+  }
+  .back {
+    display: none;
+  }
+  .modal {
+    width: 100%;
+  }
+  .nav-links li:not(:first-child) {
+    display: none;
+  }
+  .email {
+    margin-bottom: 30%;
+  }
+  .subscribe,
+  .footer {
+    padding-top: 10%;
+  }
+  .subscribe h1 {
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+
+    align-items: unset;
+  }
+
+  /* .product1,.product2,.product3{
+        width: 90%;
+        margin-bottom: 10%;
+      } */
+
+  .input-div {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btnSubmit {
+    right: unset !important;
+  }
+  .footer div {
+    text-align: center;
+  }
+}
+
+.line {
+  border-top: 2.04px solid black;
+}
+.menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  flex: 1;
+}
+.line1 {
+  width: 10.22px;
+}
+.line2 {
+  width: 16.61px;
+}
+.line3 {
+  width: 23px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #181818;
+  height: 80px;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar {
+  flex: 1;
+}
+.header-title {
+  flex: 5;
+  text-align: center;
+  font-size: 48px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #181818;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+
+  font-family: "Felix Titling", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.modal {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 30px;
+  background: #e9e7e7;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.modal-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
+}
+.modal a {
+  text-decoration: none;
+  transition: left 0.1s;
+}
+.content1 {
+  border-bottom: 1px solid #181818;
+  padding-bottom: 20px;
+}
+
+/** Overlay */
+.overlay {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/** JS */
+.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+label,.main-header {
+  font-family: "Poppins", sans-serif;
+}
+label{
+    
+  font-size: 18px;
+}
+.main-header{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.modal span {
+  font-family: "Poppins", sans-serif;
+}
+.checkbox {
+  width: 22px;
+  height: 22px;
+  background: transparent!important;
+  border: 1px solid black;
+  outline: none;
+  margin-right: 5%;
+}
+
+.checkbox-div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.second .checkbox-div{
+    width: 120px;
+    justify-content: space-between;
+}
+.radio{
+  width: 22px;
+  height: 22px;
+}
+.div-1{
+    display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.div-2{
+    width: 30px;
+    height: 1px;
+    
+    border-radius: 10px;
+}
+.type h1{
+  font-size: 25px;
+}
+.third{
+  width: 150px;
+  height: 350px!important;
+}
+.div{
+  flex-direction: column!important;
+  width: 200px;
+}
+.red{
+    border: 3px solid rgb(161, 7, 7);
+}
+.black{
+    border: 3px solid black;
+}
+.green{
+    border: 3px solid green;
+}
+.blue{
+    border: 3px solid blue;
+}
+.violet{
+    border: 3px solid violet;
+}
+.pink{
+    border: 3px solid rgb(223, 47, 77);
+}
+.yellow{
+    border: 3px solid yellow;
+}
+.brown{
+    border: 3px solid rgba(87, 49, 6, 0.863);
+}
+.grey{
+    border: 3px solid grey;
+}
+.type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 400px;
+}
+.fourth{
+  width: 300px;
+  height: 450px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.inputs{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+.inputs input{
+  width: 40%;
+  font-size:18px;
+  border-bottom: 0.75px solid rgba(0,0,0,.6);
+  padding: 3px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+input{
+  
+  background-color: transparent;
+}
+.buttons{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnApply,.btnClear{
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.btnClear{
+  color: #000;
+  background: transparent;
+  font-weight: bold;
+
+}
+.btnApply{
+  color: #fff;
+  background-color: #000;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
